@@ -24,9 +24,7 @@ function sym(...args) {
 
   let newArr = dimensionalArray.flat(1);
 
-  let sortedArr = newArr.sort((a, b) => a - b);
-
-  let countElementsInArray = sortedArr.reduce((acc, curr) => {
+  let countElementsInArray = newArr.reduce((acc, curr) => {
     const count = acc[curr] ?? 0;
     return {
       ...acc,
